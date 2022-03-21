@@ -34,22 +34,8 @@ $ wp plugin install https://github.com/rob1998/elementor-datepicker-extension/ar
 
 Install, activate and ready!
 
-## Filters
-
-You can change localization language with `'elementor/datepicker/locale'`, change date format with `'elementor/datepicker/format'` and change time picker to 24h format with `'elementor/datepicker/24h'`.
-
-Place on your themes functions.php file.
-
-```php
-// Example, force 'es' language
-add_filter( 'elementor/datepicker/locale', function(){ return 'es'; } );
-
-// Example, change date format to dd/mm/yyyy
-add_filter( 'elementor/datepicker/format', function(){ return 'd/m/Y'; } );
-
-// Use 24h format on time input
-add_filter( 'elementor/datepicker/24h', '__return_true' );
-```
+## Roadmap
+Settings coming soon
 
 ## Changelog
 
