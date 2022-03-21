@@ -46,6 +46,7 @@ class ElementorDatepickerExtension {
 
 	public function script_register() {
 		wp_register_script( 'flatpickr_localize', "https://npmcdn.com/flatpickr/dist/l10n/{$this->locale}.js", array( 'flatpickr' ) );
+		wp_register_script( 'elementor-datepicker-extension', plugins_url( '/assets/js/script.js', __FILE__ ), array( 'flatpickr', 'jquery' ));
 	}
 
 	public function script_enqueue( $item ) {
@@ -53,6 +54,8 @@ class ElementorDatepickerExtension {
 			wp_enqueue_script( 'flatpickr_localize' );
 			remove_filter( 'elementor_pro/forms/render/item/date', array( $this, 'script_enqueue' ) );
 		}
+		
+		wp_enqueue_script( 'elementor-datepicker-extension' );
 
 		return $item;
 	}
