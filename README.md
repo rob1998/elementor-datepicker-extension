@@ -8,27 +8,27 @@ Load current site locale for Elementor form datepicker.
 
 **Recommended method**, [Roots Bedrock](https://roots.io/bedrock/) and [WP-CLI](http://wp-cli.org/)
 ```shell
-$ composer require creame/elementor-datepicker-localization
-$ wp plugin activate elementor-datepicker-localization
+$ composer require rendar/elementor-datepicker-extension
+$ wp plugin activate elementor-datepicker-extension
 ```
 
 #### Manual:
 
-* Download the [zip file](https://github.com/creame/elementor-datepicker-localization/archive/master.zip)
+* Download the [zip file](https://github.com/rob1998/elementor-datepicker-extension/archive/master.zip)
 * Unzip to your sites plugin folder
 * Activate via WordPress
 
 #### WP-CLI:
 
 ```shell
-$ wp plugin install https://github.com/creame/elementor-datepicker-localization/archive/master.zip --activate
+$ wp plugin install https://github.com/rob1998/elementor-datepicker-extension/archive/master.zip --activate
 ```
 
 #### Requirements:
 
-* [PHP](http://php.net/manual/en/install.php) >= 7.x
-* [Wordpress](https://wordpress.org/download/) >= 4.7
-* [Elementor](https://wordpress.org/plugins/elementor/) >= 2.x
+* [PHP](http://php.net/manual/en/install.php) >= 7.4
+* [Wordpress](https://wordpress.org/download/) >= 5.9.2
+* [Elementor](https://wordpress.org/plugins/elementor/) >= 3.5.6
 
 ## Usage
 
@@ -51,22 +51,7 @@ add_filter( 'elementor/datepicker/format', function(){ return 'd/m/Y'; } );
 add_filter( 'elementor/datepicker/24h', '__return_true' );
 ```
 
-## Support
-
-* Follow [@creapuntome](https://twitter.com/creapuntome) on Twitter
-* Donate [https://www.paypal.me/creapuntome/](https://www.paypal.me/creapuntome/)
-
 ## Changelog
-
-### 1.3.0 - 14 Auguts 2020
-* Added native HTML output applies date format
-
-### 1.2.0 - 26 November 2019
-* Fix js error when datepickr not exists
-
-### 1.1.0 - 26 November 2019
-* Added 'elementor/datepicker/24h' filter
-* Fix date field pattern throws form validation error if change default date format
 
 ### 1.0.0 - 20 November 2019
 * Initial release
