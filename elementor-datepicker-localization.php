@@ -1,14 +1,14 @@
 <?php
 /**
- * Plugin Name: Elementor Datepicker Localization
- * Plugin URI: https://github.com/creame/elementor-datepicker-localization/
- * Description: Load current site locale for Elementor form datepicker.
- * Version: 1.3.0
- * Author: Creame
- * Author URI: https://crea.me
+ * Plugin Name: Elementor Datepicker Extension
+ * Plugin URI: https://github.com/rob1998/elementor-datepicker-extension
+ * Description: Elementor form datepicker extension, localization and validation
+ * Version: 1.0.0
+ * Author: Rob Gökemeijer
+ * Author URI: https://rendar.nl
  */
 
-class ElementorDatepickerLocalization {
+class ElementorDatepickerExtension {
 
 	private $locale;
 	private $format;
@@ -244,4 +244,4 @@ class ElementorDatepickerLocalization {
 		}
 }
 
-$elementor_datepickr_localization = new ElementorDatepickerLocalization();
+$elementor_datepickr_extension = new ElementorDatepickerExtension();
